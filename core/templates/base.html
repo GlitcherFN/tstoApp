@@ -1,0 +1,28 @@
+<html>
+  <head>
+    {% block title %}{% endblock %}
+    <link rel="stylesheet" href="/static/css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        {% block menu %}{% endblock %}
+      </nav>
+      <div class="user">
+      {% if not is_login %}
+        <button class="btn">
+          <a href="/login/">Login</a>
+        </button>
+      {% else %}
+        <a href="">Sign out</a>
+      {% endif %}
+      </div>
+    </header>
+    <div class="body">
+      {% block content %}{% endblock %}
+    </div>
+    <script src="/static/js/jquery-1.12.1.min.js"></script>
+    <script src="/static/js/utils.js"></script>
+    {% block script %}{% endblock %}
+  </body>
+</html>

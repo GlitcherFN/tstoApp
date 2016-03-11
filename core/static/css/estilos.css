@@ -1,0 +1,123 @@
+a {
+  color: #424242;
+  text-decoration: none;
+}
+body {
+  background: #efefef;
+  color: #424242;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+}
+header {
+  background: #ffc107;
+  box-shadow: 0 0 4px rgba(0,0,0,0.14), 0 4px 8px rgba(0,0,0,0.28);
+  padding: 0 5px;
+}
+header nav {
+  display: inline-block;
+  min-width: calc(100% - 210px);
+  max-width: calc(100% - 210px);
+  vertical-align: bottom;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 30px;
+  max-width: 120px;
+  min-width: 100px;
+  padding: 10px;
+  text-align: center;
+}
+header nav ul li a {
+  color: rgba(66,66,66,0.6);
+}
+header nav ul li.active {
+  color: #424242;
+  border-bottom: 2px solid #4051b5;
+}
+header .user {
+  display: inline-block;
+  padding: 0;
+  width: 150px;
+}
+input {
+  background: #efefef;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  margin: 0 10px;
+  outline: none;
+  padding: 4px 0;
+}
+input:focus {
+  border-bottom: 2.5px solid #4051b5;
+}
+.body {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  min-height: 300px;
+  padding: 10px 0;
+}
+.btn {
+  color: #fff !important;
+  background: #4051b5;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+  cursor: pointer;
+  height: 36px;
+  margin: 10px 0;
+  min-width: 60px;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  display: block;
+}
+.btn a,
+.btn span {
+  color: #fff !important;
+}
+.btn:active {
+  box-shadow: 0 4px 5px rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+}
+.item {
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0px rgba(0,0,0,0.13), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.11);
+  margin: 10px 0 5px 0;
+  min-height: 150px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.item .item_content {
+  min-height: 65px;
+  padding: 16px;
+}
+.item .item_content img {
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  max-width: 60px;
+  vertical-align: middle;
+}
+.item .item_content h1 {
+  display: inline-block;
+  line-height: 25px;
+  margin: 0;
+  vertical-align: middle;
+  width: calc(100% - 110px);
+}
+.item .item_action {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 8px;
+}

@@ -1,0 +1,113 @@
+color_primary = rgb(255, 193, 7)
+color_secundario = rgb(64, 81, 181)
+color_base = rgb(239, 239, 239)
+color_txt = rgb(66, 66, 66)
+
+a
+  color color_txt
+  text-decoration none
+
+body
+  background color_base
+  color color_txt
+  font-family "Helvetica Neue"
+  font-size 14px
+  line-height 16px
+  margin 0
+
+header
+  background color_primary
+  box-shadow 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28)
+  padding 0 5px
+  nav
+    display inline-block
+    min-width calc(100% - 210px)
+    max-width calc(100% - 210px)
+    vertical-align bottom
+    ul
+      list-style none
+      margin 0
+      padding 0
+      li
+        cursor pointer
+        display inline-block
+        line-height 30px
+        max-width 120px
+        min-width 100px
+        padding 10px
+        text-align center
+        a
+          color rgba(66, 66, 66, .6)
+        &.active
+          color rgb(66, 66, 66)
+          border-bottom 2px solid color_secundario
+  .user
+    display inline-block
+    padding 0
+    width 150px
+
+input
+  background color_base
+  border none
+  border-bottom 1px solid rgba(0, 0, 0, .12)
+  margin 0 10px
+  outline none
+  padding 4px 0
+  &:focus
+    border-bottom 2.5px solid color_secundario
+
+.body
+  width calc(100% - 100px)
+  margin 0 auto
+  min-height 300px
+  padding 10px 0
+
+.btn
+  color white !important
+  background color_secundario
+  border none
+  border-radius 3px
+  box-shadow 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+  cursor pointer
+  height 36px
+  margin 10px 0
+  min-width 60px
+  padding 0 16px
+  position relative
+  text-align center
+  text-transform uppercase
+  vertical-align middle
+  display block
+  a, span
+    color white !important
+  &:active
+    box-shadow 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+
+.item
+  border 1px solid rgba(0, 0, 0, .2)
+  border-radius 5px
+  box-shadow 0 2px 2px 0px rgba(0, 0, 0, .13), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .11)
+  margin 10px 0 5px 0
+  min-height 150px
+  position relative
+  display flex
+  flex-direction column
+  width 250px
+  .item_content
+    min-height 65px
+    padding 16px
+    img
+      border-radius 50%
+      display inline-block
+      margin-right 10px
+      max-width 60px
+      vertical-align middle
+    h1
+      display inline-block
+      line-height 25px
+      margin 0
+      vertical-align middle
+      width calc(100% - 110px)
+  .item_action
+    border-top 1px solid rgba(0, 0, 0, .1)
+    padding 8px

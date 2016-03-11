@@ -1,0 +1,20 @@
+{
+  "name": "tstoapp",
+  "version": "0.1.0",
+  "description": "The Simpsons Tapped Out tool App",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Simpsons",
+    "tool"
+  ],
+  "author": "Edgar Valencia <isc.edgarvalencia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-stylus": "^2.3.1"
+  }
+}

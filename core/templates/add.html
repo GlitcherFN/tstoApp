@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block menu %}
+  <ul>
+    <li><a href="/">General</a></li>
+    <li><a href="/items/">Items</a></li>
+    <li class="active">Add</li>
+  </ul>
+{% endblock %}
+{% block content %}
+  <div class="item">
+    <div class="item_content">
+      <img src="https://static.simpsonswiki.com/images/thumb/a/a1/Donut_Tapped_Out.png/25px-Donut_Tapped_Out.png" alt="donuts">
+      <h1>Donuts</h1>
+      <form action="" id="add_donut_form">
+      {% csrf_token %}
+      <p><input type="number" name="add_donuts" id="quantity_donuts" value='1000'></p>
+      </form>
+    </div>
+    <div class="item_action">
+      <button class="btn" id="add_donuts">Add</button>
+    </div>
+  </div>
+{% endblock %}
+{% block script %}
+  <script>
+    jQuery('#add_donuts').click(function(e) {
+      e.preventDefault();
+      jQuery.ajax({
+        url: '/add/donuts/',
+        method: 'POST',
+        data: jQuery('#add_donut_form').serialize(),
+        success: function(data) {
+          if (typeof data === 'object') {
+            if (data.status == 200 ) {
+              pu.show('Success!');
+            }
+          }
+        }
+      })
+    });
+  </script>
+{% endblock %}

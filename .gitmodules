@@ -1,0 +1,3 @@
+[submodule "core/vendor/tsto"]
+	path = core/vendor/tsto
+	url = https://github.com/schdub/tsto.git
