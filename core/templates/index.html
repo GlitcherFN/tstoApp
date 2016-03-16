@@ -7,5 +7,26 @@
   </ul>
 {% endblock %}
 {% block content %}
-  User id: <span>{{user}}</span>
+  <div class="table center">
+    <div class="row">
+      <div class="title">User</div>
+      <div class="txt">{{user}}</div>
+    </div>
+    <div class="row">
+      <div class="title">Level</div>
+      <div class="txt">{{data.level}}</div>
+    </div>
+    <div class="row">
+      <div class="title">Experience</div>
+      <div class="txt">{{data.experience}}</div>
+    </div>
+    <div class="row">
+      <div class="title">Money</div>
+      <div class="txt">{{data.money}}</div>
+    </div>
+    <div class="row">
+      <div class="title">Donuts</div>
+      <div class="txt">{{donuts}}</div>
+    </div>
+  </div>
 {% endblock %}

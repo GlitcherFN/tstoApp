@@ -1,0 +1,11 @@
+ansicolors==1.0.2
+configparser==3.5.0b2
+Django==1.9.4
+django-gulp==2.3.0
+env-tools==2.0.0
+futures==3.0.3
+protobuf==2.6.1
+psutil==3.3.0
+requests==2.9.1
+six==1.10.0
+tini==3.0.1

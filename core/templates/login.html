@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-  <div class="login">
+  <div class="login center">
     <form action="/signIn/" method="POST" id="login">
       {% csrf_token %}
       <label for="">User</label><input type="text" name="username">

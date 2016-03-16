@@ -9,13 +9,7 @@
         {% block menu %}{% endblock %}
       </nav>
       <div class="user">
-      {% if not is_login %}
-        <button class="btn">
-          <a href="/login/">Login</a>
-        </button>
-      {% else %}
-        <a href="">Sign out</a>
-      {% endif %}
+        <span>{{name}}</span>
       </div>
     </header>
     <div class="body">

@@ -7,17 +7,45 @@
   </ul>
 {% endblock %}
 {% block content %}
-  <div class="item">
-    <div class="item_content">
-      <img src="https://static.simpsonswiki.com/images/thumb/a/a1/Donut_Tapped_Out.png/25px-Donut_Tapped_Out.png" alt="donuts">
-      <h1>Donuts</h1>
-      <form action="" id="add_donut_form">
-      {% csrf_token %}
-      <p><input type="number" name="add_donuts" id="quantity_donuts" value='1000'></p>
-      </form>
+  <div class="cards">
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/a/a1/Donut_Tapped_Out.png/25px-Donut_Tapped_Out.png" alt="donuts">
+        <h1>Donuts</h1>
+        <form action="" id="add_donut_form">
+        {% csrf_token %}
+        <p><input type="number" name="add_donuts" id="quantity_donuts" value='1000'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn" id="add_donuts">Add</button>
+      </div>
     </div>
-    <div class="item_action">
-      <button class="btn" id="add_donuts">Add</button>
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/6/66/Cash.png/25px-Cash.png" alt="cash">
+        <h1>Cash</h1>
+        <form action="" id="add_cash_form">
+        {% csrf_token %}
+        <p><input type="number" name="add_cash" id="quantity_cash" value='1000000'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn" id="add_cash">Set</button>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/1/1a/XP.png/30px-XP.png" alt="Level">
+        <h1>Level</h1>
+        <form action="" id="add_level_form">
+        {% csrf_token %}
+        <p><input type="number" name="add_level" id="quantity_level" value='60'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn" id="add_level">Set</button>
+      </div>
     </div>
   </div>
 {% endblock %}
@@ -33,10 +61,45 @@
           if (typeof data === 'object') {
             if (data.status == 200 ) {
               pu.show('Success!');
+            }else {
+              pu.show('Error!');
             }
           }
         }
       })
+    });
+    jQuery('#add_cash').click(function(e) {
+      e.preventDefault();
+      jQuery.ajax({
+        url: '/add/cash/',
+        method: 'POST',
+        data: jQuery('#add_cash_form').serialize(),
+        success: function(data) {
+          if (typeof data === 'object') {
+            if (data.status === 200) {
+              pu.show('Success!');
+            }else {
+              pu.show('Error!');
+            }
+          }
+        }
+      });
+    });
+    jQuery('#add_level').click(function(e) {
+      e.preventDefault();
+      jQuery.ajax({
+        url: '/add/xp/',
+        data:jQuery('#add_level_form').serialize(),
+        success: function(data) {
+          if (typeof data === 'object') {
+            if (data.status === 200) {
+              pu.show('Success!');
+            }else{
+              pu.show('Error!');
+            }
+          }
+        }
+      });
     });
   </script>
 {% endblock %}

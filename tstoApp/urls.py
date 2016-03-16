@@ -7,6 +7,8 @@ urlpatterns = [
   url('^items/$', item),
   url('^add/$', add_item),
   url('^add/donuts/$', add_donuts),
+  url('^add/cash/$', add_cash),
+  url('^add/xp/$', set_xp),
   url('^login/$', login),
   url('^signIn/$', auth),
 ]
