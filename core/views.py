@@ -135,3 +135,24 @@ def set_xp(request):
     return HttpResponse(json.dumps(dataReturn), content_type='application/json')
   else:
     return HttpResponseRedirect('/')
+
+def add_spendable(request):
+  status = 200
+  if request.is_ajax():
+    amount = request.POST['amount']
+    types = request.POST['type']
+    try:
+      core_tsto.doLandDownload()
+      core_tsto.spendableAdd(['', types, amount])
+      core_tsto.doLandUpload()
+    except Exception, e:
+      print 'Spendable error: ', e
+      status = 500
+
+    dataReturn = {
+      'status': status
+    }
+
+    return HttpResponse(json.dumps(dataReturn), content_type='application/json')
+  else:
+    return HttpResponseRedirect('/')

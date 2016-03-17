@@ -9,6 +9,7 @@ urlpatterns = [
   url('^add/donuts/$', add_donuts),
   url('^add/cash/$', add_cash),
   url('^add/xp/$', set_xp),
+  url('^add/spendable/$', add_spendable),
   url('^login/$', login),
   url('^signIn/$', auth),
 ]

@@ -47,6 +47,132 @@
         <button class="btn" id="add_level">Set</button>
       </div>
     </div>
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/f/f9/FP_Tapped_Out.png/25px-FP_Tapped_Out.png" alt="friends level">
+        <h1>Friends Points</h1>
+        <form action="" id="add_friends_points_form">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="57">
+        <p><input type="number" name="amount" id="friends_points" value='1000'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn btn_spendable" id="add_friends_points" data-form="add_friends_points_form">Add</button>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/5/55/Krustyland_Ticket.png/25px-Krustyland_Ticket.png" alt="krustyland ticket">
+        <h1>KrustyLand tickets</h1>
+        <form action="" id="add_krustyticket_form">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="11">
+        <p><input type="number" name="amount" id="quantity_level" value='9999999'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn btn_spendable" id="add_krusty_ticket" data-form="add_krustyticket_form">Add</button>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/c/cd/Furniture.png/30px-Furniture.png" alt="Furniture">
+        <h1>Furniture</h1>
+        <form action="" id="add_furniture_form">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="105001">
+        <p><input type="number" name="amount" id="funniture" value='100'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn btn_spendable" id="add_furniture" data-form="add_furniture_form">Add</button>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/2/2c/Latte.png/30px-Latte.png" alt="latte">
+        <h1>Latte</h1>
+        <form action="" id="add_latte_form">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="105002">
+        <p><input type="number" name="amount" id="latte" value='100'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn btn_spendable" id="add_latte" data-form="add_latte_form">Add</button>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/9/91/Pharmaceutical.png/30px-Pharmaceutical.png" alt="pharmaceutical">
+        <h1>Pharmaceutical</h1>
+        <form action="" id="add_pharmaceutica_form">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="105003">
+        <p><input type="number" name="amount" id="pharmaceutica" value='100'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn btn_spendable" id="add_pharmaceutica" data-form="add_pharmaceutica_form">Add</button>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/b/be/Smart_Device.png/30px-Smart_Device.png" alt="Smart device">
+        <h1>Smart Device</h1>
+        <form action="" id="add_smart_form">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="105004">
+        <p><input type="number" name="amount" id="smart_device" value='100'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn btn_spendable" id="add_smart_device" data-form="add_smart_form">Add</button>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/e/ee/Yoga_Mat.png/30px-Yoga_Mat.png" alt="Yoga mat">
+        <h1>Yoga Mat</h1>
+        <form action="" id="add_yogamat_form">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="105005">
+        <p><input type="number" name="amount" id="yoga_mat" value='100'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn btn_spendable" id="add_yoga_mat" data-form="add_yogamat_form">Add</button>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/e/ee/Hollywood_Award.png/30px-Hollywood_Award.png" alt="hollywood award">
+        <h1>Hollywood award</h1>
+        <form action="" id="add_hollywwod_form">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="105006">
+        <p><input type="number" name="amount" id="hollywood" value='100'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn btn_spendable" id="add_hollywood_award" data-form="add_hollywwod_form">Add</button>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item_content">
+        <img src="https://static.simpsonswiki.com/images/thumb/a/a3/Tapped_Out_AdS.png/30px-Tapped_Out_AdS.png" alt="Ads">
+        <h1>Ads</h1>
+        <form action="" id="add_ads_form">
+        {% csrf_token %}
+        <input type="hidden" name="type" value="105007">
+        <p><input type="number" name="amount" id="ads" value='100'></p>
+        </form>
+      </div>
+      <div class="item_action">
+        <button class="btn btn_spendable" id="add_ads" data-form="add_ads_form">Add</button>
+      </div>
+    </div>
   </div>
 {% endblock %}
 {% block script %}
@@ -89,12 +215,30 @@
       e.preventDefault();
       jQuery.ajax({
         url: '/add/xp/',
+        method: 'POST',
         data:jQuery('#add_level_form').serialize(),
         success: function(data) {
           if (typeof data === 'object') {
             if (data.status === 200) {
               pu.show('Success!');
             }else{
+              pu.show('Error!');
+            }
+          }
+        }
+      });
+    });
+    jQuery('.btn_spendable').click(function(e) {
+      e.preventDefault();
+      $.ajax({
+        url: '/add/spendable/',
+        method: 'POST',
+        data: jQuery('#' + $(this).data('form')).serialize(),
+        success: function(data) {
+          if (typeof data === 'object') {
+            if (data.status === 200) {
+              pu.show('Success!');
+            }else {
               pu.show('Error!');
             }
           }

@@ -108,11 +108,12 @@ input:focus {
   width: 250px;
 }
 .item .item_content {
-  min-height: 65px;
+  min-height: 118px;
   padding: 16px;
 }
 .item .item_content h1 {
   display: inline-block;
+  font-size: 20px;
   line-height: 25px;
   margin: 0;
   vertical-align: middle;
