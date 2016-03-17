@@ -1,16 +1,20 @@
 The Simpsons Tapped Out tool App
 ================================
 
-# Install
+Install
+--------
 
 ```bash
 > git clone https://github.com/EdgarVaguencia/tstoApp.git
+> git submodule init
+> git submodule update
 > cd tstoApp
 > npm install
 > pip install -r requirements.txt
 > ./manage.py runserver
 ```
-# Screenshot
+Screenshot
+-----------
 
 !['General Tab'](/core/static/media/screenshot_1.png)
 
