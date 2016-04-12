@@ -15,7 +15,7 @@ gulp.task('stylus', function() {
 gulp.task('submodule', function() {
     var file = fs.readFileSync('./core/vendor/tsto/tsto.py', {encoding: 'utf-8'});
     lines = file.split('\n');
-    lines[949] = "'''"
+    lines[970] = "'''"
     lines[lines.length - 1] = "'''";
     newFile = lines.join('\n');
     fs.writeFile('./core/vendor/tsto/tsto.py', newFile, function(err) {

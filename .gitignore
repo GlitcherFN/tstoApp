@@ -2,3 +2,6 @@
 
 # Node Modules
 node_modules/*
+
+# Submodule
+core/vendor/tsto
