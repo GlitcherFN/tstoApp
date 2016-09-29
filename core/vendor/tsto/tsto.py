@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 """
 TSTO tool.
 WARNING: absolutly no warranties. Use this script at own risk.
@@ -842,6 +841,9 @@ innerLandData.creationTime: %s""" % (
         self.mLandMessageExtra = self.messageLoadFromFile(args[1], LandData_pb2.ExtraLandMessage())
 
     def tokenPath(self):
+        if not os.path.isfile('~/.tsto.conf'):
+            fileToken = open(os.path.join(os.path.expanduser('~'), '.tsto.conf'), 'w')
+            fileToken.close()
         return os.path.join(os.path.expanduser('~'), '.tsto.conf')
 
     def tokenStore(self):
@@ -1020,5 +1022,4 @@ while True :
             print("ERR: unknown command '%s'.\nMaybe you should try 'help'." % (args[0]))
     except Exception as e:
         print(traceback.print_exc())
-
 '''
