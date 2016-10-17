@@ -29,8 +29,8 @@ CT_PROTOBUF  = 'application/x-protobuf'
 CT_JSON      = 'application/json'
 CT_XML       = 'application/xaml+xml'
 ADB_SAVE_DIR = '/sdcard/Android/data/com.ea.game.simpsons4_row/files/save/'
-VERSION_APP  = '4.17.1'
-VERSION_LAND = '32'
+VERSION_APP  = '4.18.6'
+VERSION_LAND = '35'
 
 class TSTO:
     def __init__(self):
@@ -346,7 +346,7 @@ class TSTO:
         alreadyDone = set()
         for ev in events.event:
             if ev.id in alreadyDone:
-                continue 
+                continue
             xev = extra.event.add()
             xev.id = ev.id
             alreadyDone.add(ev.id)
@@ -429,10 +429,10 @@ class TSTO:
 #        self.doRequest("GET", CT_JSON, URL_OFRIENDS
 #            , "//friends/user/%s/globalgroup/friendIds" % (self.mUserId)
 #            , True)
-        
+
         # find what don't need to delete
         notDel=[]
-        delAll=False 
+        delAll=False
         for fd in friends.friendData:
             f = fd.friendData
             if (ts - f.lastPlayedTime) < crit:
@@ -555,7 +555,7 @@ innerLandData.creationTime: %s""" % (
         while sum < amount:
             cur = random.randint(499, 500)
             if sum + cur > amount:
-                cur = amount - sum 
+                cur = amount - sum
             delta = elm.currencyDelta.add()
             delta.id = nextId
             delta.reason = "JOB"
@@ -814,7 +814,7 @@ innerLandData.creationTime: %s""" % (
 
     def messageStoreToFile(self, fn, msg):
         data = msg.SerializeToString()
-        with open(fn, "wb") as f: 
+        with open(fn, "wb") as f:
             f.write(struct.pack('i', int(time.time())))
             f.write(struct.pack('i', 0))
             f.write(struct.pack('i', len(data)))
@@ -882,7 +882,7 @@ innerLandData.creationTime: %s""" % (
         os.popen('adb pull "%s%sExtra" %sExtra' % (ADB_SAVE_DIR, self.mUid, fn))
         self.doFileOpen(('load', fn))
         self.doFileOpenExtra(('loadextra', fn + 'Extra'))
-    
+
     def doAdbPush(self):
         os.popen('adb shell "rm %s%sB"'      % (ADB_SAVE_DIR, self.mUid))
         os.popen('adb shell "rm %s%sExtraB"' % (ADB_SAVE_DIR, self.mUid))
@@ -931,7 +931,7 @@ astext               - save LandMessage text representation into file
 adbpull              - pull/push LandMessage and ExtraLandMessage from
 adbpush                local device save path using Android Debug Bridge
 
-prizeset id number   - set current prize number for specialEvent with given id 
+prizeset id number   - set current prize number for specialEvent with given id
 vs name[,name] val   - set variable(s) to value
 vars [name[,name]]   - print variables with given names or all
 donuts count         - set donuts for logined acc to count
