@@ -23,7 +23,6 @@ Fly
 ```bash
 > vagrant ssh
 > (tstoApp)vagrant@precise64:~$ /home/tstoApp/manage.py runserver 0.0.0.0:8000
-()
 ```
 
 Test
