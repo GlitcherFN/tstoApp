@@ -1,7 +1,16 @@
 *.pyc
 
 # Node Modules
-node_modules/*
+server/node_modules/*
+
+# Builds
+server/build/*
+
+#  Vagrant machine
+vagrantSetup/.vagrant/machines/*
+
+# Vagrant Buid
+vagrantSetup/build/*
 
 # Submodule
 # core/vendor/tsto

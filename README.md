@@ -4,22 +4,29 @@ The Simpsons Tapped Out tool App
 The simpsons tapped out app client, UI the tool [source](https://github.com/schdub/tsto).
 
 Install
---------
+------------
+- [git ](https://git-scm.com)
+- [vagrant](https://www.vagrantup.com)
+
+Configuration
+-------------
 
 ```bash
 > git clone https://github.com/EdgarVaguencia/tstoApp.git
-> cd tstoApp
-> npm install
-> pip install -r requirements.txt
-> git submodule init
-> git submodule update
-> gulp submodule
-> ./manage.py runserver
+> cd tstoApp/vagrantSetup
+> vagrant up
 ```
 
-Screenshot
-----------
+Fly
+---
 
-!['General Tab'](/core/static/media/screenshot_1.png)
+```bash
+> vagrant ssh
+> (tstoApp)vagrant@precise64:~$ /home/tstoApp/manage.py runserver 0.0.0.0:8000
+()
+```
 
-!['Add Tab'](/core/static/media/screenshot.png)
+Test
+-----
+
+Go [192.168.33.10:8000](http://192.168.33.10:8000)
