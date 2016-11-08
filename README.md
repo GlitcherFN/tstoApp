@@ -22,10 +22,17 @@ Fly
 
 ```bash
 > vagrant ssh
-> (tstoApp)vagrant@precise64:~$ /home/tstoApp/manage.py runserver 0.0.0.0:8000
+> (tstoApp)vagrant@precise64:~$ python /home/tstoApp/manage.py runserver 0.0.0.0:8000
 ```
 
 Test
 -----
 
 Go [192.168.33.10:8000](http://192.168.33.10:8000)
+
+Screenshot
+----------
+
+!['General Tab'](/server/core/static/media/screenshot_1.png)
+
+!['Add Tab'](/server/core/static/media/screenshot.png)
