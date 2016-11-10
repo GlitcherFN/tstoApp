@@ -22,10 +22,10 @@ if [[ ! -f /usr/local/bin/virtualenvwrapper.sh ]]; then
 fi
 
 # Profile
-if [[ ! -f /home/vagrant/bash_profile.sh ]]; then
+if [[ ! -f /home/vagrant/.bash_profile ]]; then
 
   echo "-- CP Bash Profile --"
-  cp /home/options/.bash_profile /home/vagrant/.bash_profile
+  cp /home/options/bash_profile /home/vagrant/.bash_profile
 
 fi
 
