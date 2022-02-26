@@ -14,12 +14,12 @@ Configuration
 > git clone https://github.com/EdgarVaguencia/tstoApp.git
 ```
 
-Fly
+run
 ---
 
 ```bash
 cd to tstoApp\server
-then type manage.py runserver
+type manage.py runserver
 ```
 
 Test
