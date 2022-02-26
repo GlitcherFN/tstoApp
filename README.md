@@ -14,7 +14,7 @@ Configuration
 > git clone https://github.com/EdgarVaguencia/tstoApp.git
 ```
 
-run
+Run
 ---
 
 ```bash
