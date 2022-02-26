@@ -11,7 +11,7 @@ Configuration
 -------------
 
 ```bash
-> git clone https://github.com/EdgarVaguencia/tstoApp.git
+> git clone https://github.com/GlitcherFN/tstoApp.git
 ```
 
 Run
