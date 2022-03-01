@@ -6,6 +6,6 @@ The simpsons tapped out app client, UI the tool [source](https://github.com/schd
 Screenshot
 ----------
 
-!['General Tab'](server/core/static/media/screenshot_1.png)
+!['General Tab'](/core/static/media/screenshot_1.png)
 
-!['Add Tab'](server/core/static/media/screenshot.png)
+!['Add Tab'](/core/static/media/screenshot.png)
