@@ -18,6 +18,8 @@ Run
 ---
 
 ```bash
+create a new folder in your python site-packages directory called LandData_pb2
+and copy LandData_pb2.py which is located in the server/core/vendor/tsto/
 cd to tstoApp\server
 type manage.py runserver
 ```
